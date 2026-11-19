@@ -10,4 +10,5 @@ rc /nologo QuietMouse.rc || exit /b 1
 cl /nologo /std:c++17 /W4 /O2 /MT /utf-8 /DUNICODE /D_UNICODE QuietMouse.cpp QuietMouse.res user32.lib shell32.lib advapi32.lib /link /SUBSYSTEM:WINDOWS /OUT:portable\QuietMouse.exe || exit /b 1
 del QuietMouse.obj QuietMouse.res
 copy /y "Getting started.txt" portable\ >nul || exit /b 1
-tar.exe -a -cf QuietMouse-Windows-x64.zip -C portable QuietMouse.exe QuietMouse.Settings.exe "Getting started.txt" || exit /b 1
+copy /y LICENSE portable\ >nul || exit /b 1
+tar.exe -a -cf QuietMouse-Windows-x64.zip -C portable QuietMouse.exe QuietMouse.Settings.exe "Getting started.txt" LICENSE || exit /b 1

@@ -17,3 +17,7 @@ build.cmd
 ```
 
 The script builds the native C++ tray application and the C# settings editor into `portable\` and creates `QuietMouse-Windows-x64.zip` for distribution.
+
+## License
+
+[MIT License](LICENSE) © 2026 PanBronty.
