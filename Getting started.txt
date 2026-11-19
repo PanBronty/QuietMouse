@@ -1,0 +1,61 @@
+QuietMouse for Windows 10 and 11 (x64)
+
+Getting started
+
+Open this guide from Display settings with Help or F1. Press Esc to return
+to your adjustments.
+
+1. Extract the entire ZIP to a folder and run QuietMouse.exe. Look for its
+   icon near the clock, including in the hidden icons menu.
+2. In Windows Settings > System > Display, extend your desktop. Arrange the
+   displays side by side in one row with adjacent vertical edges touching.
+3. Open Display settings from the QuietMouse tray icon. Drag each display
+   up or down to match your desk, or enter its top offset in millimeters.
+   A positive offset moves the display down.
+4. If a display is marked "estimated", measure its visible screen from top
+   to bottom in its current orientation, excluding the bezel. Enter that
+   measurement under "height (mm)".
+5. Select Save changes. Move your pointer across the top and bottom of the
+   shared edge to check the alignment. You can keep the editor open and
+   save again. The editor refreshes when Windows changes displays. Unsaved
+   edits are kept for their original layout until you close the editor.
+
+Display calibration
+
+Mint lines show where neighboring displays overlap. For a constant error,
+adjust the top offset. If the error grows from top to bottom, check screen
+height. Use detected height restores the EDID height without moving the top.
+
+Cross unmatched edges
+
+Enable Cross unmatched edges and save to cross a non-overlapping section
+at the nearest corner of the next display. This option is off by default
+and is saved per layout. Windows cursor confinement still applies.
+
+Pause shortcut and status
+
+Enable Pause shortcut and save to toggle alignment with Ctrl+Alt+Shift+Q.
+This optional shortcut applies to all layouts. The editor reports if the
+combination is already taken. Launch QuietMouse again to open the editor.
+Changes saved confirms the disk write. Applied confirms active alignment.
+Aligned by Windows means the current row already lines up in pixels and
+physical height. QuietMouse can leave pointer movement to Windows.
+Use Reload displays in the tray menu to check the current layout again.
+
+Profiles and updates
+
+QuietMouse stores layouts in %LOCALAPPDATA%\QuietMouse\Profiles.ini.
+Windows may identify a display as new if you switch ports. To import top
+offsets from the original personal edition, place its QuietMouse.ini next
+to QuietMouse.exe. Exit the running version before starting a new copy.
+
+QuietMouse pauses alignment on a single display or an unsupported layout.
+To compare pointer movement, select Pause alignment from the tray menu.
+Resume alignment applies the latest saved profile for the current displays.
+Pausing lasts until you resume or exit QuietMouse.
+For elevated windows such as Task Manager, exit QuietMouse and start it
+with Run as administrator. Regular permissions work for ordinary windows.
+
+To start at sign-in, press Win+R, enter shell:startup and place a shortcut
+to QuietMouse.exe in that folder. To remove the app, exit it from the tray,
+remove the shortcut if present, and delete the extracted folder.

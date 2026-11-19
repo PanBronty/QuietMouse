@@ -1,0 +1,19 @@
+# Local calibration and registry backups
+*.ini
+*.reg
+
+# Build products
+/portable/
+*.exe
+*.obj
+*.res
+*.pdb
+*.zip
+
+# Local design iterations and retired guide
+/before.png
+/compact.png
+/dark.png
+/editor.png
+/Icon.png
+/Jak zacit.txt
